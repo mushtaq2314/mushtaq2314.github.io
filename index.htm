@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutorial
+    </title>
+    <style>
+        .container{
+            font-family: consolas;
+            background-color: cyan;
+            text-align: center;
+        }
+        #btn{
+            background-color: black;
+            color: white;
+            font-size: 30px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquam iusto error tenetur repellendus! Quis recusandae distinctio reiciendis dolorem ut a molestiae quo modi exercitationem in unde, architecto saepe hic.</p>
+
+
+    <ul id = "we">
+        <li >Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Login</li>
+        <li>SignUp</li>
+    </ul>
+
+    <div class="container" id = "para">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum repellendus expedita neque amet? Quia, similique rem quaerat nobis porro dolores, odit inventore molestias sint nisi vitae recusandae voluptas libero reiciendis assumenda consectetur ut laudantium soluta? Omnis, tenetur nulla? Doloremque officiis repellat, asperiores ad modi veritatis molestias et eius qui id perferendis accusamus nostrum vero eveniet fugiat eum neque. Laudantium ipsa vero placeat provident aliquid quas nulla, sint sunt quo libero dicta soluta, doloremque dignissimos maiores molestias suscipit reiciendis corrupti ratione, velit praesentium nihil? Modi magni ut voluptate temporibus quasi recusandae eum aut nemo soluta molestiae error ex, itaque labore fuga fugit doloremque maxime quos unde corrupti mollitia beatae accusamus sequi hic. Distinctio recusandae dicta explicabo, reprehenderit iste dolores dolore assumenda, corrupti deserunt enim ea non et expedita aliquid maxime quae omnis cum molestiae a obcaecati eligendi tempore illum? Sapiente labore, alias dolores pariatur ipsa, modi temporibus quaerat porro facere dolor deleniti facilis quasi libero quae doloribus ab possimus? Ratione ipsam delectus quisquam nulla ex explicabo doloremque. Atque maiores itaque odio nobis illum recusandae accusantium rerum sequi assumenda? Perferendis soluta alias iste qui recusandae consequatur porro excepturi consequuntur, nemo optio aut doloribus voluptate neque quod, accusamus nisi animi non eum quibusdam.
+    </div>
+    <button id="btn" onclick="hide()">Show/Hide</button>
+</body>
+<script>
+    // console.log("Hello")
+    // var x=9;
+    // console.log("x^2 = ",x**2)
+    // var s ="kahckdbc";
+    // console.log(s,s.length)
+
+    // function greet(x){
+    //     console.log('Hello '+x);
+    // }
+    // greet('a')
+    // greet('qwerty')
+
+    // alert('Hi');
+    // let p =  prompt('Who are you?','gajala');
+    // if (p=='gajala'){
+    //     alert('U are gajala');
+    // }
+    // else{
+    //     alert('U are not gajala');
+    // }
+    // console.log(p);
+    // // alert("Your email is "+prompt('Enter email to proceed'))
+    // prompt(alert('enter mail'+prompt('')))
+    // a = [1,2,23,12,45,323,1213,453,3234,3]
+    // a.forEach(element => {
+    //     console.log(element);
+    //     console.log(element*2)
+    // });
+    let x = document.getElementById('we');
+    console.log(x)
+    // we.innerHTML = 'QWERTY';
+    let all = document.querySelectorAll('#we>li')
+    console.log(all)
+    console.log(all[2])
+    all[2].innerHTML='Gajala'
+
+    function hide(){
+        let b = document.getElementById('btn')
+        let p = document.getElementById('para')
+        if (p.style.display != 'none'){
+            p.style.display='none';
+            b.innerHTML='show'
+        }
+        else{
+            p.style.display='block';
+            b.textContent='hide'
+
+        }
+    }
+</script>
+</html>
